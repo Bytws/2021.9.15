@@ -31,10 +31,10 @@ public class Demo {
         Collections.shuffle(pokeid);
         System.out.println(pokeid);
 
-        ArrayList<Integer> play1ID = new ArrayList<>();
-        ArrayList<Integer> play2ID = new ArrayList<>();
-        ArrayList<Integer> play3ID = new ArrayList<>();
-        ArrayList<Integer> dipaiID = new ArrayList<>();
+        TreeSet<Integer> play1ID = new TreeSet<>();
+        TreeSet<Integer> play2ID = new TreeSet<>();
+        TreeSet<Integer> play3ID = new TreeSet<>();
+        TreeSet<Integer> dipaiID = new TreeSet<>();
 
         for (int i = 0; i < pokeid.size(); i++) {
             Integer paiid = pokeid.get(i);
@@ -49,10 +49,6 @@ public class Demo {
                 play3ID.add(paiid);
             }
         }
-        Collections.sort(play1ID);
-        Collections.sort(play2ID);
-        Collections.sort(play3ID);
-        Collections.sort(dipaiID);
 
         ArrayList<String> play1 = new ArrayList<>();
         ArrayList<String> play2 = new ArrayList<>();
